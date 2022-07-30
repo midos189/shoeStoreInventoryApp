@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+    I have chosen a Constraintlayout because is more easy to build the screen in other hand
+    I would have had to use different LinealLayouts (vertical and horizontal)
+    -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_150">
+
+        <View
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="@dimen/zero_height"
+            android:background="@drawable/rounded_shoe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageShoeList"
+            android:layout_width="@dimen/value_150"
+            android:layout_height="@dimen/value_150"
+            android:contentDescription="@string/header_image_description"
+            android:src="@drawable/model_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameShoeList"
+            style="@style/textApp"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageShoeList"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/shoe_name_dummy" />
+
+        <TextView
+            android:id="@+id/nameCompanyList"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/nameShoeList"
+            app:layout_constraintTop_toBottomOf="@+id/nameShoeList"
+            tools:text="@string/company_name_dummy" />
+
+        <Button
+            android:id="@+id/sizeShoeList"
+            android:layout_width="@dimen/value_50"
+            android:layout_height="@dimen/value_50"
+            android:layout_marginTop="@dimen/value_10"
+            android:layout_marginEnd="@dimen/value_36"
+            android:layout_marginBottom="@dimen/value_16"
+            android:background="@drawable/rounded_circle_enabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@+id/nameCompanyList"
+            tools:text="@string/nine_number" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <variable
+            name="shareViewModel"
+            type="com.udacity.shoestore.ShareViewModel" />
+    </data>
+</layout>
