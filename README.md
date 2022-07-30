@@ -11,7 +11,7 @@ This App has been developed as part of the Udacity Android Kotlin Developer Nano
 
 |Login|Onboarding|Instruction screen 1|Instruction screen 2|Shoes list|Shoe detail|
 |---|---|---|---|---|---|
-
+|![login](https://github.com/midos189/midos189/blob/main/images/login.png)|![welcome](https://github.com/midos189/midos189/blob/main/images/welcome.png)|![instruction1](https://github.com/midos189/midos189/blob/main/images/instruction_1.png)|![instruction2](https://github.com/midos189/midos189/blob/main/images/instruction_2.png)|![list](https://github.com/midos189/midos189/blob/main/images/shoe_list.png)|![detail](https://github.com/midos189/midos189/blob/main/images/shoe_detail.png)|
 ---
 
 ## App 
